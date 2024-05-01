@@ -6,6 +6,6 @@
 echo "###################################################################"
 echo "Initializing the container setup script..."
 
-echo "Executing Auth Test..."
+# Executing Auth Test
 robot /robot/auth/auth.robot
 
