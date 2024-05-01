@@ -1,0 +1,13 @@
+{
+	"name": "Ubuntu",
+	"dockerFile": "Dockerfile",
+	"customizations": {
+			"vscode": {
+					"extensions": [
+						"d-biehl.robotcode",
+						"GitHub.copilot",
+						"dracula-theme.theme-dracula"
+					]
+			}
+	}
+}
