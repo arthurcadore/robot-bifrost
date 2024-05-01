@@ -1,0 +1,17 @@
+# Main composition file for Robot Application Container.
+# Author: Arthur Cadore M. Barcella
+# Github: arthurcadore
+
+version: '3.8'
+services:
+  # Application container
+  robotappliance:
+    container_name: robotappliance
+    network_mode: "host"
+    cap_add:
+      - NET_ADMIN
+    volumes:
+      - "./auth/:/robot/auth/"
+    build:
+      context: .
+      dockerfile: ./docker/Dockerfile
