@@ -11,7 +11,13 @@ services:
     cap_add:
       - NET_ADMIN
     volumes:
-      - "./auth/:/robot/auth/"
+      - "./scripts/:/robot/scripts/"
+      - "/dev/:/dev/"
+      - "/run/:/run/"
+      - "/tmp/.X11-unix:/tmp/.X11-unix"
     build:
       context: .
       dockerfile: ./docker/Dockerfile
+    environment:
+      - "DISPLAY=:0"
+      - "XDG_RUNTIME_DIR=$XDG_RUNTIME_DIR"

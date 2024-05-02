@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/ash
 # Author: Arthur Cadore M. Barcella
 # Github: arthurcadore
 
@@ -7,5 +7,5 @@ echo "###################################################################"
 echo "Initializing the container setup script..."
 
 # Executing Auth Test
-robot /robot/auth/auth.robot
-
+chmod +x /robot/scripts/playbook.sh
+./robot/scripts/playbook.sh
